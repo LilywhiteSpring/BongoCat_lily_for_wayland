@@ -1,4 +1,4 @@
-## bongocat-lily-wayland
+## bongocat-lily-wayland for stg
 
 A low-overhead Lily White Bongo Cat overlay for wlroots-style Wayland
 compositors, with niri as the primary target.
@@ -8,17 +8,19 @@ event. PNG layers are decoded and alpha-correctly scaled once at startup, transp
 are trimmed in memory, and a frame composites only the background, optional key
 highlight, and two arm layers into a `wl_shm` buffer.
 
-### Hiii
+### 面向niri桌面的stg桌宠莉莉！
 
 这是面向wlroots风格Wayland合成器、以rust语言编写的 Lily-White BongoCat桌宠
 悬浮键盘，主要针对 niri 开发。程序使用 layer-shell 创建一个透明悬浮层，它会直接读取 Linux
 evdev 输入设备来驱动猫手和键盘高亮动画。
 
+
 ![Lilywhite](assets/lilywhite.png)
 
-![Example1](example/01.png)
+![Example1](assets/keyboard/bg.png)
 
 ![Example2](example/02.png)
+
 
 
 ### 构建与运行
@@ -43,8 +45,6 @@ cargo run --release -- --config bongocat.toml --scale 2
 支持的位置包括：`top-left`、`top`、`top-right`、`left`、`center`、
 `right`、`bottom-left`、`bottom`、`bottom-right`。
 
-可以在不连接 Wayland 的情况下检查配置和素材路径是否有效：
-
 ```sh
 cargo run --release -- --config bongocat.toml.example --check
 ```
@@ -67,15 +67,13 @@ sudo usermod -aG input "$USER"
 
 ### 按键映射
 
-- 方向键使用 `righthand` 素材：上/左/下/右分别对应姿势 0/1/3/2，
-  键盘高亮 6/4/3/5。
-- `X`、`Z`、左 Shift 使用 `lefthand` 素材，姿势和高亮分别为 2/1/0。
+- 方向键使用 `righthand` 
+- `X`、`Z`、左 Shift 使用 `lefthand` 素材
 - 其他键盘按键按 QWERTY 物理位置分为左右手，不显示按键高亮。
 - 鼠标左键、右键和中键分别让左手、右手和双手响应。
 - 空格同时触发双手动画。
 
 所有素材路径和按键绑定都可以在 TOML 中修改。程序使用 Linux `EV_KEY` 名称，
-因此动画跟随物理按键，不受当前文字输入布局影响。
 
 ### 素材许可
 
