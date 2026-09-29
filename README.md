@@ -1,4 +1,4 @@
-## bongocat-lily-wayland for stg
+## Bongocat-lily-wayland for STG
 
 A low-overhead Lily White Bongo Cat overlay for wlroots-style Wayland
 compositors, with niri as the primary target.
@@ -13,6 +13,8 @@ highlight, and two arm layers into a `wl_shm` buffer.
 这是面向wlroots风格Wayland合成器、以rust语言编写的 Lily-White BongoCat stg桌宠
 然而）主要针对 niri 开发。程序使用 layer-shell 创建一个透明悬浮层，它会直接读取evdev输入设备来驱动手手和键盘高亮
 
+
+（东方同人三次创作，只有程序是自己的hhh
 
 ![Example1](assets/keyboard/bg.png)
 
