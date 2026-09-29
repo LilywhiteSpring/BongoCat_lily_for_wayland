@@ -1,0 +1,21 @@
+[package]
+name = "bongocat-lily-wayland"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "A lightweight Lily White Bongo Cat overlay for Wayland"
+
+[dependencies]
+libc = "0.2.185"
+png = "0.18.1"
+serde = { version = "1.0.228", features = ["derive"] }
+smithay-client-toolkit = { version = "0.20.0", default-features = false, features = ["calloop"] }
+toml = "1.1.2"
+wayland-client = "0.31.15"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = true
+

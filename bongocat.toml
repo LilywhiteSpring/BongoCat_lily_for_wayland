@@ -1,0 +1,76 @@
+[window]
+width = 225
+height = 140
+anchor = "top-right"
+layer = "top"
+margin_x = 24
+margin_y = 12
+
+[input]
+# Empty means all readable /dev/input/event* devices.
+devices = []
+rescan_seconds = 3
+
+[assets]
+# Relative paths are resolved from this configuration file.
+root = "assets/keyboard"
+background = "bg.png"
+keyboard = [
+  "keyboard/0.png", "keyboard/1.png", "keyboard/2.png",
+  "keyboard/3.png", "keyboard/4.png", "keyboard/5.png",
+  "keyboard/6.png",
+]
+# `left` and `right` follow the artwork's hand names.
+left_up = "lefthand/leftup.png"
+left_down = [
+  "lefthand/0.png", "lefthand/1.png", "lefthand/2.png",
+  "lefthand/3k.png",
+]
+right_up = "righthand/rightup.png"
+right_down = [
+  "righthand/0.png", "righthand/1.png", "righthand/2.png",
+  "righthand/3.png",
+]
+
+# `hand` follows the artwork hand name. `highlight` indexes assets.keyboard.
+[[bindings.keys]]
+code = "KEY_UP"
+hand = "right"
+pose = 3
+highlight = 3
+
+[[bindings.keys]]
+code = "KEY_LEFT"
+hand = "right"
+pose = 2
+highlight = 5
+
+[[bindings.keys]]
+code = "KEY_DOWN"
+hand = "right"
+pose = 0
+highlight = 6
+
+[[bindings.keys]]
+code = "KEY_RIGHT"
+hand = "right"
+pose = 1
+highlight = 4
+
+[[bindings.keys]]
+code = "KEY_X"
+hand = "left"
+pose = 2
+highlight = 2
+
+[[bindings.keys]]
+code = "KEY_Z"
+hand = "left"
+pose = 1
+highlight = 1
+
+[[bindings.keys]]
+code = "KEY_LEFTSHIFT"
+hand = "left"
+pose = 0
+highlight = 0
