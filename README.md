@@ -16,6 +16,11 @@ evdev 输入设备来驱动猫手和键盘高亮动画。
 
 ![Lilywhite](assets/lilywhite.png)
 
+![Example1](example/01.png)
+
+![Example2](example/02.png)
+
+
 ### 构建与运行
 （咱先cd到源码所在工作目录
 ```sh
@@ -75,9 +80,11 @@ sudo usermod -aG input "$USER"
 ### 素材许可
 
 源码是MIT许可，不过图片素材不属于 MIT 许可范围（侵权删捏qwq
-
-
+PID:72826765
+[原网址](https://www.pixiv.net/en/artworks/72826765)
 ## Artwork license
 
 See `ASSETS.md`. The source-code MIT license does not grant permission to
 redistribute artwork from the `assets/` directory.
+PID:72826765
+[Original artwork](https://www.pixiv.net/en/artworks/72826765)
