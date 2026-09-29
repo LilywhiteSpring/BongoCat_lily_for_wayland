@@ -8,11 +8,10 @@ event. PNG layers are decoded and alpha-correctly scaled once at startup, transp
 are trimmed in memory, and a frame composites only the background, optional key
 highlight, and two arm layers into a `wl_shm` buffer.
 
-### 面向niri桌面的stg桌宠莉莉！
+### 面向niri桌面的stg桌宠莉莉！OvO
 
-这是面向wlroots风格Wayland合成器、以rust语言编写的 Lily-White BongoCat桌宠
-悬浮键盘，主要针对 niri 开发。程序使用 layer-shell 创建一个透明悬浮层，它会直接读取 Linux
-evdev 输入设备来驱动猫手和键盘高亮动画。
+这是面向wlroots风格Wayland合成器、以rust语言编写的 Lily-White BongoCat stg桌宠
+然而）主要针对 niri 开发。程序使用 layer-shell 创建一个透明悬浮层，它会直接读取evdev输入设备来驱动手手和键盘高亮
 
 
 ![Example1](assets/keyboard/bg.png)
