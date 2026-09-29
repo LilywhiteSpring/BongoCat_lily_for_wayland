@@ -15,8 +15,6 @@ highlight, and two arm layers into a `wl_shm` buffer.
 evdev 输入设备来驱动猫手和键盘高亮动画。
 
 
-![Lilywhite](assets/lilywhite.png)
-
 ![Example1](assets/keyboard/bg.png)
 
 ![Example2](example/02.png)
@@ -86,3 +84,5 @@ See `ASSETS.md`. The source-code MIT license does not grant permission to
 redistribute artwork from the `assets/` directory.
 PID:72826765
 [Original artwork](https://www.pixiv.net/en/artworks/72826765)
+
+![Lilywhite](assets/lilywhite.png)
